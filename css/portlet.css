@@ -1,0 +1,130 @@
+body {
+  min-width: 320px;
+  background-color: #ddddbb;
+
+  /* FIXME: don't do this; width should be dynamically changed in JavaScript */
+  width: 10000px;
+}
+
+.sortable > div {
+  float: left;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.sortable > div:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.portlet {
+  margin: 10px 0;
+  padding: 5px 5px 15px 5px;
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.portlet-column:active, .portlet:active {
+  box-shadow: 1px 1px 6px 2px rgba(24, 24, 24, 0.4);
+}
+
+.portlet-column {
+  padding: 10px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  width: 380px;
+  float: left;
+  background-color: #bbbb99;
+  border-radius: 10px;
+}
+
+.portlet-column-header {
+  padding: 0.2em 0.3em;
+  margin-bottom: 0.5em;
+  width: 360px;
+  position: relative;
+  background-color: #ffffdd;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* override default for portlet header */
+.ui-widget-header {
+  border: 1px solid #aaaaaa;
+  background: #ffffdd;
+  font-weight: normal;
+}
+
+.portlet-header {
+  padding: 0.2em 0.3em;
+  margin-bottom: 0.5em;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.portlet-header:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.glyphicon-edit {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  margin-top: -11px;
+  cursor: pointer;
+}
+
+.portlet-toggle {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -8px;
+  cursor: pointer;
+}
+
+.portlet-content {
+  padding: 0.4em;
+}
+
+/* FIXME: improve styling here */
+.portlet-column-placeholder {
+  margin: 5px;
+  border: 3px dotted #777733;
+  padding: 10px;
+  width: 380px;
+  height: 360px;
+}
+
+.portlet-placeholder {
+  border: 3px dotted #777733;
+  padding: 10px;
+  margin: 0 5px;
+
+  /* height is hard-coded here, which isn't great */
+  height: 325px;
+}
+
+#portlet-column-add {
+  height: 88px;
+  font-size: 3em;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+canvas {
+  cursor: pointer;
+}
+
+/* FIXME: feel free to delete this at any time */
+.border-for-test-purposes {
+  border: 2px solid red;
+}

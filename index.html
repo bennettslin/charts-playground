@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charts Playground</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- jQuery portlet style and script -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/portlet.css">
+  <script src="js/portlet.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+<!-----------------------------------------------------------------------------
++ Source: http://www.pubnub.com/blog/quick-word-cloud-from-a-chatroom-with-d3js/
+------------------------------------------------------------------------------>
+
+  <script src="http://cdn.pubnub.com/pubnub.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+  <script src="js/d3.layout.cloud.js"></script>
+  <script src="js/cloud.js"></script>
+
+<!-----------------------------------------------------------------------------
++ Please note that this is Leigh Quince's Chart.js, which extends Nick Downie's
++ Chart.js by adding the Overlay class. This overlays the Bar and Line charts.
++ Source: https://github.com/leighquince/Chart.js
+------------------------------------------------------------------------------>
+  <script src="js/Chart.js"></script>
+
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+
+<div>
+  <div class="sortable">
+
+    <div class="portlet-column">
+      <div class="portlet-column-header">Column 1<span class='glyphicon glyphicon-edit'></span></div>
+
+      <div class="portlet">
+        <div class="portlet-header">Word Cloud</div>
+        <div class="portlet-content"><section id="word-cloud"></section></div>
+      </div>
+
+      <div class="portlet">
+        <div class="portlet-header">Line Chart</div>
+        <div class="portlet-content"><canvas id="lineChart" width="340" height="250"></canvas></div>
+      </div>
+
+      <div class="portlet">
+        <div class="portlet-header">Bar Chart</div>
+        <div class="portlet-content"><canvas id="barChart" width="340" height="250"></canvas></div>
+      </div>
+
+    </div>
+
+    <div class="portlet-column">
+      <div class="portlet-column-header">Column 2<span class='glyphicon glyphicon-edit'></span></div>
+
+      <div class="portlet">
+        <div class="portlet-header">Overlay Chart</div>
+        <div class="portlet-content"><canvas id="overlayChart" width="340" height="250"></canvas></div>
+      </div>
+
+      <div class="portlet">
+        <div class="portlet-header">Radar Chart</div>
+        <div class="portlet-content"><canvas id="radarChart" width="340" height="250"></canvas></div>
+      </div>
+
+      <div class="portlet">
+        <div class="portlet-header">Polar Chart</div>
+        <div class="portlet-content"><canvas id="polarChart" width="340" height="250"></canvas></div>
+      </div>
+
+    </div>
+
+    <div class="portlet-column">
+      <div class="portlet-column-header">Column 3<span class='glyphicon glyphicon-edit'></span></div>
+
+      <div class="portlet">
+        <div class="portlet-header">Multi Overlay Chart</div>
+        <div class="portlet-content"><canvas id="multiOverlayChart" width="340" height="250"></canvas></div>
+      </div>
+
+      <div class="portlet">
+        <div class="portlet-header">Pie Chart</div>
+        <div class="portlet-content"><canvas id="pieChart" width="340" height="250"></canvas></div>
+      </div>
+
+      <div class="portlet">
+        <div class="portlet-header">Doughnut Chart</div>
+        <div class="portlet-content"><canvas id="doughnutChart" width="340" height="250"></canvas></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="portlet-column" id="portlet-column-add">Add Column</div>
+</div>
+</body>
+</html>
